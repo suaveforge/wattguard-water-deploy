@@ -27,6 +27,8 @@ jobs:
           node --check app.js
           node --check model.js
           node --check evidence-registry.js
+      - name: Check demo behavior
+        run: npm test
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

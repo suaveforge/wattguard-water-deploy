@@ -1,0 +1,11 @@
+{
+  "name": "wattguard-water",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Industrial water infrastructure simulation with evidence registry",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/check.mjs",
+    "verify": "node --check model.js && node --check evidence-registry.js && node --check app.js && npm test"
+  }
+}
